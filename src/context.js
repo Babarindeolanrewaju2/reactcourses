@@ -15,9 +15,6 @@ export const CoursesContextProvider = ({ children }) => {
   const [scienceCount, setScienceCount] = useState("");
   const [recentPosts, setRecentPosts] = useState("");
 
-  let promise = new Promise(function(resolve, reject) {
-    setTimeout(() => resolve(items), 10);
-  });
 
  const handleSearch = (e) => {
     e.preventDefault();
